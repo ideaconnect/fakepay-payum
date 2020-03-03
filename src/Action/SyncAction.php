@@ -36,10 +36,9 @@ class SyncAction extends GatewayAwareAction implements ActionInterface
 
         $model = ArrayObject::ensureArrayObject($request->getModel());
 
-        $this->gateway->execute($httpRequest = new GetHttpRequest());
-        $requestData = $httpRequest->request;
+//        $this->gateway->execute($httpRequest = new GetHttpRequest());
+        //$requestData = $httpRequest->request;
 
-        $model = $requestData->getArrayCopy();
     }
 
     /**

@@ -9,7 +9,7 @@ abstract class Constants
     const STATUS_NEW = 'new';
     const STATUS_CAPTURED = 'captured';
     const STATUS_PENDING = 'pending';
-    const STATUS_AUTHORIZED = 'authorized';
+    const STATUS_AUTHORIZED = 'completed';
     const STATUS_FAILED = 'failed';
     const STATUS_CANCELED = 'canceled';
     const STATUS_REFUNDED = 'refunded';

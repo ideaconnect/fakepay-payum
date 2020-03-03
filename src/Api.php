@@ -15,6 +15,12 @@ class Api
      */
     protected $client;
 
+    protected $options = [
+        'merchant_id' => null,
+        'merchant_key' => null,
+        'endpoint' => self::DEFAULT_ENDPOINT
+    ];
+
     /**
      * @param array $options
      * @param HttpClientInterface|null $client

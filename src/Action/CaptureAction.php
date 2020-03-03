@@ -12,7 +12,7 @@ use Payum\Core\Request\Capture;
 /**
  * CaptureAction
  */
-class CaptureAction extends GatewayAwareAction
+class CaptureAction extends DoPaymentAction
 {
     /**
      * @var Api
@@ -29,17 +29,6 @@ class CaptureAction extends GatewayAwareAction
         }
 
         $this->api = $api;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function execute($request)
-    {
-        /** @var $request Capture */
-        RequestNotSupportedException::assertSupports($this, $request);
-
-        $this->gateway->execute($doPayment = new DoPayment($request->getModel()));
     }
 
     /**
