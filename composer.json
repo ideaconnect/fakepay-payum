@@ -1,0 +1,29 @@
+{
+    "name": "idct/payum-fakepay",
+    "type": "library",
+    "description": "fakepay api implementation for payum",
+    "keywords": [
+        "payment",
+        "fakepay",
+        "payum"
+    ],
+    "homepage": "https://idct.pl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "IDCT Bartosz Pachołek",
+            "email": "bartosz@idct.pl"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "payum/core": "^1.5",
+        "php-http/guzzle6-adapter": "*"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": { "IDCT\\Payum\\Fakepay\\": "src/" }
+    }
+}
